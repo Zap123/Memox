@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Memox</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="UTF-8"> 
+    <script src="JS/MemoX.js"></script>
+  </head>
+  <body onload='init()'>
+    <h1>Memo<b>X</b> </h1>
+    <div id='game'>
+        <ul id=cardsSet>
+	  
+        </ul>
+    </div>
+  <script>
+        function init(){
+            var play = new Game();
+        }
+  </script>
+  <script type="text/template" id="cardTemplate">
+    <li>
+      <div class='container'>
+	  <div class='card' id='card {0}' onclick='Game.flipCard(this)'>
+	      <div class='front'><img alt='front' src='Assets/texture.jpg'>
+	      </div>
+	      <div class='back'>
+		  <img alt='back' src='Assets/c{1}.gif'> 
+	      </div>
+	  </div>
+      </div>
+    </li>
+  </script>
+  </body>
+</html>
