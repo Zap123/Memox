@@ -1,4 +1,4 @@
 Memox
 =====
 
-An HTML5 Simple Memory Game
+A Simple HTML5 Memory Game
