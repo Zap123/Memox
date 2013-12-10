@@ -1,9 +1,18 @@
+/*  This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation,  version 3 of the License.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/ */
+
 (function MemoX(window) {
     'use strict';
-    /*FIXME:  Segnapunti*/
-    /*FIXME: Cronometro*/
 
-//    var music = new Audio('Sounds/bgmusic.ogg'),
        var board = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 
                  1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
         uncovered = 0,
@@ -37,7 +46,6 @@
     function Game() {
         var match = document.getElementById("cardsSet"),
             TPL =   document.getElementById("cardTemplate").innerHTML;
-  //      music.play();
         makeCards(match, TPL);
     }
 
